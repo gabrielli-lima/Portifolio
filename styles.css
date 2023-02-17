@@ -6,16 +6,19 @@
 
 body {
     width: 100vw;
-    height: 100vh;
+    height: auto;
 
     background: #F5E4D7E3;
     border: 6px solid transparent;
     border-image: linear-gradient(to left, #009AFF66 40%, #E27396 60%);
     border-image-slice: 1;
+
+    display: flex;
+    flex-direction: column;
 }
 
 header {
-    width: 100%;
+    width: 100vw;
     height: 70px;
     background: #F5E4D7;
     box-shadow: 0 0px 3px gray;
@@ -24,11 +27,12 @@ header {
     top: 0;
     left: 0;
     padding: 0 50px;
-    float: left;
+
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
 }
 
 nav {
@@ -39,34 +43,176 @@ nav {
     line-height: 24px;
 }
 
+nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
 header img {
     width: 36px;
     height: 36px;
 }
 
-main {
+@media screen and (min-width: 640px) {
+
+    main {
+        max-width: 100vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    h1 {
+        width: 620px;
+        height: 190px;
+
+        padding: 285px 0 2rem 75px;
+        font-family: 'Bitter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 80px;
+        line-height: 96px;
+
+        color: black;
+    }
+
+    main img {
+        margin-top: 180px;
+        max-width: 100%;
+
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+    main {
+        max-width: 100vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+
+        padding: 8rem 0 2rem 0;
+        font-family: 'Bitter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 5rem;
+        line-height: 96px;
+        text-align: center;
+        color: black;
+    }
+
+    main img {
+        max-width: 100%;
+    }
+
+
+}
+
+#wave-light {
+    background: #DFB0B0;
+    position: relative;
+    align-items: center;
+
+}
+
+#sobre {
+    background: #DFB0B0;
     width: 100%;
-    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.containerSobre {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+
 }
 
-h1 {
-    width: 620px;
-    height: 190px;
+.containerSobre h3 {
+    margin-bottom: 25px;
 
-    padding: 285px 0 0 75px;
     font-family: 'Bitter';
     font-style: normal;
-    font-weight: 400;
-    font-size: 80px;
-    line-height: 96px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
 
-    color: black;
+    color: #980046;
+
 }
 
-main img {
-    margin-top: 180px;
+.containerSobre p {
+    font-family: 'Mada';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+
+    color: #252525;
+    margin-bottom: 40px;
+}
+
+.containerSobre img {
+    width: 300px;
+    height: 300px;
+    margin: 70px 0 0 60px;
+    border-radius: 5px;
+    z-index: 2;
+
+}
+
+#textoSobre {
+    width: 700px;
+}
+
+.minhaFoto {
+    float: left;
+    position: relative;
+}
+
+.contornoFoto {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border: 2px solid #E27396;
+    border-radius: 5px;
+    bottom: 40px;
+    left: 80px;
+    z-index: 1;
+
+}
+
+/* Scrollbar */
+
+/* total width */
+body::-webkit-scrollbar {
+    background-color: #fff;
+    width: 16px;
+}
+
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+    border-radius: 16px;
+    border: 4px solid #fff;
+    opacity: 0.5;
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+    display: none;
 }

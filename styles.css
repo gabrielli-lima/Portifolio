@@ -8,7 +8,7 @@ body {
     width: 100vw;
     height: auto;
 
-    background: #F5E4D7E3;
+    background: #F5E4D7;
     border: 6px solid transparent;
     border-image: linear-gradient(to left, #009AFF66 40%, #E27396 60%);
     border-image-slice: 1;
@@ -116,32 +116,35 @@ header img {
 
 #wave-light {
     background: #DFB0B0;
-    position: relative;
-    align-items: center;
-
 }
 
 #sobre {
     background: #DFB0B0;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+    padding-bottom: 50px;
+
+    display: grid;
+    grid-template-columns: 50% 30%;
+    grid-template-rows: 30px auto auto;
+    grid-row-gap: 25px;
+    grid-column-gap: 25px;
+    grid-template-areas:
+        "h3 h3"
+        "p minhafoto"
+        "icones minhafoto";
+    justify-content: center;
 }
 
-.containerSobre {
+/* 
+#sobre {
     max-width: 100%;
     display: flex;
     flex-flow: column wrap;
     position: relative;
 
     margin: 0 auto;
-}
+} */
 
-.containerSobre h3 {
-    margin: 0 0 25px;
-
+.h3 {
     font-family: 'Bitter';
     font-style: normal;
     font-weight: 600;
@@ -149,9 +152,11 @@ header img {
     line-height: 38px;
     color: #980046;
 
+    grid-area: h3;
+
 }
 
-.containerSobre p {
+.p {
     font-family: 'Mada';
     font-style: normal;
     font-weight: 400;
@@ -160,29 +165,35 @@ header img {
 
     color: #252525;
     margin-bottom: 40px;
-    max-width: 700px;
+    /* max-width: 700px; */
+
+    grid-area: p;
+
 }
 
-.containerSobre img {
+.minhafoto img {
     width: 300px;
     height: 300px;
     border-radius: 5px;
 
 }
 
-#textoeFoto {
+/* #textoeFoto {
     display: flex;
     max-width: 100%;
     justify-content: space-between;
-flex-flow: wrap;
-}
+    flex-flow: wrap;
+} */
 
 
-.minhaFoto {
+.minhafoto {
     position: relative;
     z-index: 1;
-padding-right: 20px;
-margin-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+
+    grid-area: minhafoto;
+
 }
 
 .contornoFoto {
@@ -194,6 +205,25 @@ margin-left: 20px;
     top: 20px;
     left: 20px;
     z-index: -1;
+}
+
+
+.icones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 50px;
+    max-width: 100%;
+    grid-area: icones;
+    align-items: start;
+
+}
+
+
+#wave-dark {
+    background: #DFB0B0;
+    transform: rotateX(180deg);
 }
 
 

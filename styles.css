@@ -229,7 +229,6 @@ header img {
 
 #projetos {
     background: #F5E4D7;
-    padding-bottom: 50px;
 
     display: grid;
     justify-content: center;
@@ -244,6 +243,79 @@ header img {
 .projeto {
     background: #D9D9D9;
     gap: 25px;
+}
+
+
+/* Contato */
+#contato {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: space-evenly;
+
+    margin-top: 300px;
+}
+
+.containerContato {
+    position: relative;
+    background: #ffffff;
+    z-index: -1;
+    border-radius: 15px;
+    max-height: 300px;
+}
+
+
+.square {
+    width: 300px;
+    height: 300px;
+    border: 20px solid #DFB0B0;
+    border-radius: 15px;
+    z-index: -1;
+
+}
+
+#triangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 5px;
+    z-index: -1;
+
+}
+
+#contato h2 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    line-height: 32px;
+    text-align: center;
+    color: #980046;
+    
+}
+
+.redes {
+    margin-top: 80px;
+    display: grid;
+    justify-content: center;
+    column-gap: 15px;
+    row-gap: 15px;
+    grid-template-columns: 35px 100px;
+    grid-template-rows: 35px 35px;
+    max-width: 100%;
+}
+
+.iconImg {}
+
+.linkRede {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 35px;
+
+    color: #980046;
 }
 
 

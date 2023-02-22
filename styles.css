@@ -15,7 +15,7 @@ body {
 
     display: flex;
     flex-direction: column;
-
+position: relative;
     scroll-behavior: smooth;
 }
 
@@ -254,6 +254,7 @@ header img {
     justify-content: space-evenly;
 
     margin-top: 300px;
+    margin-bottom: 70px;
 }
 
 .containerContato {
@@ -292,7 +293,7 @@ header img {
     line-height: 32px;
     text-align: center;
     color: #980046;
-    
+
 }
 
 .redes {
@@ -318,6 +319,33 @@ header img {
     color: #980046;
 }
 
+footer {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to left, #009AFF66 40%, #E27396 60%);
+    box-shadow: 0 0px 3px gray;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+footer span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #000000;
+
+}
 
 
 /* Scrollbar */

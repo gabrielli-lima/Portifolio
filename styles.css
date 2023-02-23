@@ -226,6 +226,7 @@ header img {
     background: #F5E4D7;
 }
 
+/* Projetos */
 
 #projetos {
     background: #F5E4D7;
@@ -336,6 +337,7 @@ header img {
     line-height: 35px;
 
     color: #980046;
+    text-decoration: none;
 }
 
 footer {

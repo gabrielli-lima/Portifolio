@@ -34,12 +34,14 @@
         <nav><a href="#contato">Contato</a></nav>
         <img src="./assets/flower.svg" alt="Flor">
     </header>
+
     <main>
         <h1>Oi, meu nome é <b>Gabrielli!</b></h1>
         <img src="./assets/woman-at-desk.svg" alt="">
     </main>
 
     <img src="./assets/wave-light.svg" alt="" id="wave-light">
+
     <section id="sobre">
         <h3 class="h3">Sobre min</h3>
         <p class="p">
@@ -70,19 +72,41 @@
             <img src="./assets/iconSQL.svg">
         </div>
     </section>
+
     <img src="./assets/wave-dark.svg" alt="" id="wave-dark">
 
-
+    <a href=""></a>
     <section id="projetos">
-        <div class="item projeto"><img src="./assets/previewSidebar.gif"></div>
-        <div class="item projeto"><img src="./assets/previewPricingTable.png"></div>
-        <div class="item projeto"><img src="./assets/previewLoginForm.png"></div>
-        <div class="item projeto"><img src="./assets/previewThemeSwitcher.png"></div>
-        <div class="item projeto"><img src="./assets/previewCountdown.png"></div>
-        <div class="item projeto"><img src="./assets/previewPagReceitas.png"></div>
-        <div class="item projeto"><img src="./assets/previewSocialTree.png"></div>
-        <div class="item projeto"><img src="./assets/previewRocketNews.png"></div>
+        <h3>Projetos</h3>
+        <div class="grid-item">
+            <div class="item projeto" onclick="modalC()"><a href="#modalConteudo"><img src="./assets/previewSidebar.gif"></a>
+            </div>
+            <div class="item projeto"><a href="#modal"><img src="./assets/previewPricingTable.png"></a>
+            </div>
+            <div class="item projeto"><a href="#modal"><img src="./assets/previewLoginForm.png"></a>
+            </div>
+            <div class="item projeto"><a href="#modal"><img src="./assets/previewThemeSwitcher.png"></a>
+            </div>
+            <div class="item projeto"><a href="#modal"><img src="./assets/previewCountdown.png"></a>
+            </div>
+            <div class="item projeto"><a href="#modal"><img src="./assets/previewPagReceitas.png"></a>
+            </div>
+            <div class="item projeto"><a href="#modal"><img src="./assets/previewSocialTree.png"></a>
+            </div>
+            <div class="item projeto"><a href="#modal"><img src="./assets/previewRocketNews.png"></a>
+            </div>
+            <div class="item projeto"><a href="#modal"><img src="./assets/previewRocketNews.png"></a>
+            </div>
+        </div>
+
+        <div id="modal" class="modal"></div>
+        <div id="modalConteudo" class="modalConteudo">
+            
+            <a href="#projetos" class="close" onclick="btnClose()">&times;</a>
+        </div>
+
     </section>
+
 
     <section id="contato">
         <div class="containerContato">
@@ -90,15 +114,22 @@
                 <h2>CONTATO</h2>
                 <img src="./assets/triangle.svg" id="triangle">
                 <div class="redes">
-                    <img src="./assets/icon_linkedin.svg" class="iconImg"><a href="https://www.linkedin.com/in/gabrielli-lima/" class="linkRede">Linkedin</a>
-                    <img src="./assets/icon_github.svg" class="iconImg"><a href="https://github.com/gabrielli-lima" class="linkRede">Github</a>
-                    <img src="./assets/icon_mail.svg" class="iconImg"><a href="mailto:gabrielli4lm@gmail.com" class="linkRede">E-mail</a>
+                    <img src="./assets/icon_linkedin.svg" class="iconImg"><a
+                        href="https://www.linkedin.com/in/gabrielli-lima/" class="linkRede">Linkedin</a>
+                    <img src="./assets/icon_github.svg" class="iconImg"><a href="https://github.com/gabrielli-lima"
+                        class="linkRede">Github</a>
+                    <img src="./assets/icon_mail.svg" class="iconImg"><a href="mailto:gabrielli4lm@gmail.com"
+                        class="linkRede">E-mail</a>
                 </div>
             </div>
         </div>
         <img src="./assets/imgContato.svg" alt="">
     </section>
+
     <footer><span> © 2023 • Designed & developed with 🤍 by Gabrielli</span></footer>
+
+    <script src="./script.js"></script>
+
 </body>
 
 </html>

@@ -13,34 +13,42 @@
 
     <!-- Fontes de letras -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
-
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mada&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
     <header>
-        <nav><a href="#sobre">Sobre</a></nav>
-        <nav><a href="#projetos">Projetos</a></nav>
-        <nav><a href="#contato">Contato</a></nav>
-        <img src="./assets/flower.svg" alt="Flor">
+        <nav>
+            <a href="#" class="logo">Gabrielli Lima</a>
+            <i class="fas fa-bars" id="ham-menu">
+                <img src="./assets/list.svg" alt="">
+            </i>
+            <!-- <ul id="nav-bar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul> -->
+        </nav>
+        <div class="header-container">
+            <div class="apresentacao-container">
+                <h1>Oi, meu nome é Gabrielli!</h1>
+                <h2>Desenvolvedora Front-End</h2>
+                <p>Gosto de resolver problemas e transformá-los em soluções visuais. Crio aplicações para web usando tecnologias como JavaScript e ReactJS.
+                </p>
+                <button type="button">
+                    Entre em contato
+                    <img src="./assets/arrowRight.svg" alt="">
+                </button>
+            </div>
+            <img src="./assets/woman-at-desk.svg" alt="">
+        </div>
     </header>
 
-    <main>
-        <h1>Oi, meu nome é <b>Gabrielli!</b></h1>
-        <img src="./assets/woman-at-desk.svg" alt="">
-    </main>
 
-    <img src="./assets/wave-light.svg" alt="" id="wave-light">
+    <!-- <img src="./assets/wave-light.svg" alt="" id="wave-light">
 
     <section id="sobre">
         <h3 class="h3">Sobre min</h3>
@@ -79,7 +87,8 @@
     <section id="projetos">
         <h3>Projetos</h3>
         <div class="grid-item">
-            <div class="item projeto" onclick="modalC()"><a href="#modalConteudo"><img src="./assets/previewSidebar.gif"></a>
+            <div class="item projeto" onclick="modalC()"><a href="#modalConteudo"><img
+                        src="./assets/previewSidebar.gif"></a>
             </div>
             <div class="item projeto"><a href="#modal"><img src="./assets/previewPricingTable.png"></a>
             </div>
@@ -101,7 +110,7 @@
 
         <div id="modal" class="modal"></div>
         <div id="modalConteudo" class="modalConteudo">
-            
+
             <a href="#projetos" class="close" onclick="btnClose()">&times;</a>
         </div>
 
@@ -124,9 +133,9 @@
             </div>
         </div>
         <img src="./assets/imgContato.svg" alt="">
-    </section>
+    </section> -->
 
-    <footer><span> © 2023 • Designed & developed with 🤍 by Gabrielli</span></footer>
+    <!-- <footer><span> © 2023 • Designed & developed with 🤍 by Gabrielli</span></footer> -->
 
     <script src="./script.js"></script>
 

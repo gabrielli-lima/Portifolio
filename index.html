@@ -9,20 +9,22 @@
     <title>Gabrielli Lima</title>
     <link rel="shortcut icon" href="./assets/flower.svg" type="image/x-icon">
 
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./styles.css">
 
     <!-- Fontes de letras -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kalam&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <a href="#" class="logo">Gabrielli Lima</a>
-            <i class="fas fa-bars" id="ham-menu">
+    <header class="flex flex-col">
+        <nav class="flex h-16 w-full p-5 justify-between items-center">
+            <a href="#" class="logo text-2xl">&lt; GabrielliLima /&gt;</a>
+            <i class="" id="ham-menu">
                 <img src="./assets/list.svg" alt="">
             </i>
             <!-- <ul id="nav-bar">
@@ -32,33 +34,30 @@
                 <li><a href="#contato">Contato</a></li>
             </ul> -->
         </nav>
-        <div class="header-container">
-            <div class="apresentacao-container">
-                <h1>Oi, meu nome é Gabrielli!</h1>
-                <h2>Desenvolvedora Front-End</h2>
-                <p>Gosto de resolver problemas e transformá-los em soluções visuais. Crio aplicações para web usando tecnologias como JavaScript e ReactJS.
+        <div class="flex flex-col-reverse justify-between items-center w-full p-8 word-break-break-word">
+            <div class="apresentacao-container flex flex-col">
+                <h1 class="my-6 self-stretch text-4xl font-normal leading-14">Oi, meu nome é Gabrielli!</h1>
+                <h2 class="text-2xl font-medium mb-4 self-stretch">Desenvolvedora Front-End</h2>
+                <p class="mb-8 self-stretch text-base font-light">Gosto de resolver problemas e transformá-los em soluções visuais. Crio aplicações para web usando tecnologias como JavaScript e ReactJS.
                 </p>
-                <button type="button">
+                <button type="button" class="text-center text-base font-medium flex flex-row justify-center self-end flex-wrap w-auto h-auto p-4 gap-2 border-none rounded-lg">
                     Entre em contato
-                    <img src="./assets/arrowRight.svg" alt="">
+                    <img src="./assets/arrowRight.svg" alt="" class="w-6 h-6">
                 </button>
             </div>
-            <img src="./assets/woman-at-desk.svg" alt="">
+            <img src="./assets/woman-at-desk.svg" alt="" class="w-full h-[266px]">
         </div>
     </header>
 
-    <main>
+    <main class="py-12 px-8 w-full h-auto flex flex-col">
         <section class="sobre">
             <img src="./assets/designer-girl-bro.svg" alt="">
             <img src="./assets/tech-stack.svg" alt="">
-           <h4>Sobre mim</h4>
+            <h4 class="mt-8 mb-2 text-base leading-4">Sobre mim</h4>
             <h2>Desenvolvedora Front-End</h2>
-                <p>Atualmente estudo Análise e Desenvolvimento de Sistemas, em 2019 fiz o curso técnico de Desenvolvimento de Sistemas. Gosto de resolver problemas e ajudar as pessoas, então a melhor parte é ver o resultado, a satisfação final supera todos os desafios encontrados.
-                <br>
-                E por gostar de desafios, resultados finais e soluções práticas, esses foram os motivos que escolhi a área.
-                <br>
-                Por trás dos códigos, eu gosto de passar o tempo assistindo doramas, jogando vôlei e eu amo doguinhos.
-                </p>
+            <p class="mt-4 text-base font-light">
+                Atualmente, estudo Análise e Desenvolvimento de Sistemas. Em 2019, concluí o curso técnico de Desenvolvimento de Sistemas. Gosto de resolver problemas e ajudar pessoas, e para mim, a melhor parte é ver os resultados superando os desafios encontrados. Escolhi essa área por gostar de desafios, resultados finais e soluções práticas. Por trás dos códigos, amo doguinhos e passo meu tempo livre assistindo doramas e fazendo atividades ao ar livre.
+            </p>
         </section>
     </main>
 

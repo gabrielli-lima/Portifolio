@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <title>Gabrielli Lima</title>
     <link rel="shortcut icon" href="./assets/flower.svg" type="image/x-icon">
 
@@ -24,23 +24,27 @@
     <header class="flex flex-col">
         <nav class="flex h-16 w-full p-5 justify-between items-center">
             <a href="#" class="logo text-2xl">&lt; GabrielliLima /&gt;</a>
-            <i class="" id="ham-menu">
+            <button type="button" id="ham-menu">
                 <img src="./assets/list.svg" alt="">
-            </i>
-            <!-- <ul id="nav-bar">
-                <li><a href="#">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul> -->
+            </button>
+            <!-- <div class="menu-mobile">
+                <ul id="nav-bar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div> -->
         </nav>
         <div class="flex flex-col-reverse justify-between items-center w-full p-6 word-break-break-word">
             <div class="apresentacao-container flex flex-col">
                 <h1 class="my-6 self-stretch text-4xl font-normal leading-14">Oi, meu nome é Gabrielli!</h1>
                 <h2 class="text-2xl font-medium mb-4 self-stretch">Desenvolvedora Front-End</h2>
-                <p class="mb-8 self-stretch text-base font-light">Gosto de resolver problemas e transformá-los em soluções visuais. Crio aplicações para web usando tecnologias como JavaScript e ReactJS.
+                <p class="mb-8 self-stretch text-base font-light">Gosto de resolver problemas e transformá-los em soluções
+                    visuais. Crio aplicações para web usando tecnologias como JavaScript e ReactJS.
                 </p>
-                <button type="button" class="text-center text-base font-medium flex flex-row justify-center self-end flex-wrap w-auto h-auto p-4 gap-2 border-none rounded-lg">
+                <button type="button"
+                    class="text-center text-base font-medium flex flex-row justify-center self-end flex-wrap w-auto h-auto py-4 px-6 gap-2 border-none rounded-lg">
                     Entre em contato
                     <img src="./assets/arrowRight.svg" alt="" class="w-6 h-6">
                 </button>
@@ -50,11 +54,12 @@
     </header>
 
     <main class="w-full h-auto flex flex-col ">
-        <section class="sobre py-12 px-6">
+        <!-- SOBRE -->
+        <section class="sobre py-12 px-6" id="sobre">
             <img src="./assets/designer-girl-bro.svg" alt="">
             <img src="./assets/tech-stack.svg" alt="">
             <h4 class="mt-8 mb-2 text-base leading-4">Sobre mim</h4>
-            <h2>Desenvolvedora Front-End</h2>
+            <h2 class="text-2xl font-medium">Desenvolvedora Front-End</h2>
             <p class="mt-4 text-base font-light">
                 Atualmente, estudo Análise e Desenvolvimento de Sistemas. Em 2019, concluí o curso técnico de
                 Desenvolvimento de Sistemas. Gosto de resolver problemas e ajudar pessoas, e para mim, a melhor parte é ver
@@ -63,7 +68,9 @@
                 fazendo atividades ao ar livre.
             </p>
         </section>
-        <section class="projetos py-12 px-6 text-center">
+    
+        <!-- PROJETOS -->
+        <section class="projetos py-12 px-6 text-center relative" id="projetos">
             <h4 class="mb-2 text-base leading-4">Projetos</h4>
             <h2 class="text-2xl font-medium">Dê uma olhada nos meus projetos em destaque</h2>
             <img src="./assets/graphic.svg" alt="">
@@ -72,7 +79,7 @@
                 <div class="card-projeto p-4 flex flex-col items-start self-stretch rounded-2xl ">
                     <img src="./" alt="" class="w-full h-40 rounded-t-lg">
                     <div class="flex self-end my-4">JS</div>
-                    <h3 class="mb-2">DevLinks</h3>
+                    <h3 class="mb-2 text-xl leading-6">DevLinks</h3>
                     <p>A link agragator for social media.</p>
                 </div>
                 <div class="card-projeto p-4 flex flex-col items-start self-stretch rounded-2xl ">
@@ -87,102 +94,44 @@
                     <h3 class="mb-2">DevLinks</h3>
                     <p>A link agragator for social media.</p>
                 </div>
-                <button type="button" class="w-36 h-14 mt-4 text-center text-base font-medium flex flex-row justify-center p-4 gap-2 border-none rounded-lg">
+    
+                <button type="button"
+                    class="w-auto h-auto py-4 px-6 mt-4 text-center text-base font-medium flex flex-row justify-center gap-2 border-none rounded-lg">
                     Ver todos
                     <img src="./assets/arrowRight.svg" alt="" class="w-6 h-6">
                 </button>
+                <img src="./assets/graphic2.svg" alt="" class="absolute bottom-20 right-0">
             </div>
         </section>
-    </main>
-
-    <!-- <img src="./assets/wave-light.svg" alt="" id="wave-light">
-
-    <section id="sobre">
-        <h3 class="h3">Sobre min</h3>
-        <p class="p">
-            Oi, meu nome é Gabrielli e gosto de resolver problemas e tranforma-los em solucoes visuais. Desde
-            sempre, quando não sei como fazer ou consertar algo fico imergida no assunto até que eu saiba
-            toda a
-            resposta, a melhor parte é ver o resultado, a sastifação final superar todos os desafios que
-            haviam
-            sido encontrados. E por gostar de desafios, resultados finais solucoes praticas, foram os
-            motivos
-            por escolher a area.
-            <br>
-            <br>
-            Atualmente estudo Analise e Desenvolvimento de Sistemas, em 2019 fiz o curso tecnico de
-            Desenvolvimento de Sistemas no Senai
-            <br>
-            <br>
-            Aqui são algumas das tecnologia que estou aprendendo no momento
-        </p>
-        <div class="minhafoto">
-            <img src="./assets/fotoPerfil5.jpg" alt="">
-            <div class="contornoFoto"></div>
-        </div>
-        <div class="icones">
-            <img src="./assets/iconHtml.svg">
-            <img src="./assets/iconCss.svg">
-            <img src="./assets/iconJS.svg">
-            <img src="./assets/iconSQL.svg">
-        </div>
-    </section>
-
-    <img src="./assets/wave-dark.svg" alt="" id="wave-dark">
-
-    <a href=""></a>
-    <section id="projetos">
-        <h3>Projetos</h3>
-        <div class="grid-item">
-            <div class="item projeto" onclick="modalC()"><a href="#modalConteudo"><img
-                        src="./assets/previewSidebar.gif"></a>
+    
+        <!-- CONTATO -->
+        <section class="contato py-12 px-6" id="contato">
+            <img src="./assets/cute-avatar.svg" alt="">
+            <h4 class="mt-10 mb-2 text-base leading-4">Contato</h4>
+            <h2 class="text-2xl font-medium">Gostou do meu trabalho? Entre em contato comigo</h2>
+            <p class="my-4">I’m always up for a chat. Pop me an email at <a href="mailto:gabriellilima2@hotmail.com" class="underline">gabriellilima2@hotmail.com</a> or
+                give me a shout on social media. </p>
+            <div class="icons-social-media flex flex-row gap-2">
+                <button type="button" class="rounded-lg p-3"><img src="./assets/logo-github.svg" alt=""></button>
+                <button type="button" class="rounded-lg p-3"><img src="./assets/logo-linkedin.svg" alt=""></button>
             </div>
-            <div class="item projeto"><a href="#modal"><img src="./assets/previewPricingTable.png"></a>
-            </div>
-            <div class="item projeto"><a href="#modal"><img src="./assets/previewLoginForm.png"></a>
-            </div>
-            <div class="item projeto"><a href="#modal"><img src="./assets/previewThemeSwitcher.png"></a>
-            </div>
-            <div class="item projeto"><a href="#modal"><img src="./assets/previewCountdown.png"></a>
-            </div>
-            <div class="item projeto"><a href="#modal"><img src="./assets/previewPagReceitas.png"></a>
-            </div>
-            <div class="item projeto"><a href="#modal"><img src="./assets/previewSocialTree.png"></a>
-            </div>
-            <div class="item projeto"><a href="#modal"><img src="./assets/previewRocketNews.png"></a>
-            </div>
-            <div class="item projeto"><a href="#modal"><img src="./assets/previewRocketNews.png"></a>
-            </div>
-        </div>
-
-        <div id="modal" class="modal"></div>
-        <div id="modalConteudo" class="modalConteudo">
-
-            <a href="#projetos" class="close" onclick="btnClose()">&times;</a>
-        </div>
-
-    </section>
-
-
-    <section id="contato">
-        <div class="containerContato">
-            <div class="square">
-                <h2>CONTATO</h2>
-                <img src="./assets/triangle.svg" id="triangle">
-                <div class="redes">
-                    <img src="./assets/icon_linkedin.svg" class="iconImg"><a
-                        href="https://www.linkedin.com/in/gabrielli-lima/" class="linkRede">Linkedin</a>
-                    <img src="./assets/icon_github.svg" class="iconImg"><a href="https://github.com/gabrielli-lima"
-                        class="linkRede">Github</a>
-                    <img src="./assets/icon_mail.svg" class="iconImg"><a href="mailto:gabrielli4lm@gmail.com"
-                        class="linkRede">E-mail</a>
+            <form action="" class="mt-12 flex flex-col">
+                <div>
+                    <input type="text" name="" id="" placeholder="Nome" aria-label="Nome" class="flex w-full py-3 px-4 text-base items-center self-stretch rounded-lg border-solid shadow-sm focus:outline-none focus:ring">
                 </div>
-            </div>
-        </div>
-        <img src="./assets/imgContato.svg" alt="">
-    </section> -->
-
-    <!-- <footer><span> © 2023 • Designed & developed with 🤍 by Gabrielli</span></footer> -->
+                <div>
+                    <input type="email" name="" id="" placeholder="E-mail" aria-label="E-mail" class="flex w-full py-3 px-4 my-4 text-base items-center self-stretch rounded-lg border-solid shadow-sm focus:outline-none focus:ring">
+                </div>
+                <div>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Sua mensagem" aria-label="Sua mensagem" class="flex w-full py-3 px-4 text-base items-center self-stretch rounded-lg border-solid shadow-sm focus:outline-none focus:ring"></textarea>
+                </div>
+            <button type="submit" class="text-center text-base font-medium flex flex-row justify-center self-start flex-wrap mt-8 w-auto h-auto py-4 px-6 gap-2 border-none rounded-lg">
+                Enviar mensagem
+                <img src="./assets/arrowRight.svg" alt="" class="w-6 h-6">
+            </button>
+            </form>
+        </section>
+    </main>
 
     <script src="./script.js"></script>
 

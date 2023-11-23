@@ -43,21 +43,13 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
-h2 {
+h2, h3, p, button[type="button"], button[type="submit"] {
   color: var(--color-text-primary);
-  font-family: "Poppins", sans-serif;
-}
-
-p {
-  color: var(--color-text-secondary);
   font-family: "Poppins", sans-serif;
 }
 
 .apresentacao-container button {
   background: var(--color-brand-primary);
-
-  color: var(--color-text-primary-button-label, #f5f6f6);
-  font-family: "Poppins", sans-serif;
 }
 
 /* MAIN */
@@ -85,6 +77,26 @@ h4 {
 
 .projetos button {
   background: var(--color-surface-secondary);
-  color: var(--color-text-primary-button-label, #f5f6f6);
-  font-family: "Poppins", sans-serif;
+}
+
+.contato{
+  background: var(--color-surface-primary);
+}
+
+.icons-social-media button{
+  background: var(--color-surface-secondary);
+}
+
+.contato button[type="submit"]{
+  background: var(--color-brand-primary);
+}
+
+form input, form textarea{
+  background: var(--color-surface-background);
+  color: var(--color-text-secondary);
+}
+
+form input:focus, form textarea:focus {
+  border-color: var(--color-brand-secondary);
+  box-shadow: 0 0 0 3px var(--color-brand-secondary);
 }

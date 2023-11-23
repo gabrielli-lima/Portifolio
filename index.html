@@ -22,21 +22,14 @@
 <body>
 
     <header class="flex flex-col">
-        <nav class="flex h-16 w-full p-5 justify-between items-center">
+        <nav class="flex h-16 w-full p-5 justify-between items-center" id="navBar">
             <a href="#" class="logo text-2xl">&lt; GabrielliLima /&gt;</a>
-            <button type="button" id="ham-menu">
-                <img src="./assets/list.svg" alt="">
+            <button type="button" id="iconMenu">
+                <img src="./assets/list.svg" alt="" id="menuImage">
             </button>
-            <!-- <div class="menu-mobile">
-                <ul id="nav-bar">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </div> -->
+            
         </nav>
-        <div class="flex flex-col-reverse justify-between items-center w-full p-6 word-break-break-word">
+        <div class="flex flex-col-reverse justify-between items-center w-full p-6 word-break-break-word" id="headerConteudo">
             <div class="apresentacao-container flex flex-col">
                 <h1 class="my-6 self-stretch text-4xl font-normal leading-14">Oi, meu nome é Gabrielli!</h1>
                 <h2 class="text-2xl font-medium mb-4 self-stretch">Desenvolvedora Front-End</h2>
@@ -142,7 +135,18 @@
             <a href="#"><img src="./assets/arrow-up.svg" alt="" class="py-3"></a>
         </ul>
         <span cla> © 2023 • Designed & developed with 🤍 by Gabrielli</span>
+        
     </footer>
+
+    <!-- Menu mobile -->
+    <div class="hidden top-16 right-0 h-screen py-4 px-6 w-3/4" id="menu">
+        <ul class="flex flex-col gap-6 text-base text-right">
+            <li><a href="#">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </div>
 
     <script src="./script.js"></script>
 

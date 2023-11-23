@@ -21,6 +21,10 @@ body {
   background: var(--color-surface-background);
 }
 
+#navBar{
+  background: var(--color-surface-background);
+}
+
 .logo {
   color: var(--color-text-primary);
   font-family: "Kalam", cursive;
@@ -99,4 +103,16 @@ form input, form textarea{
 form input:focus, form textarea:focus {
   border-color: var(--color-brand-secondary);
   box-shadow: 0 0 0 3px var(--color-brand-secondary);
+}
+
+/* Menu mobile */
+
+#menu{
+  background: var(--color-surface-primary);
+  color: var(--color-text-secondary);
+
+}
+
+#menu li:hover{
+  color: var(--color-text-primary);
 }

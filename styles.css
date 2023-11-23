@@ -16,7 +16,7 @@
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: var(--color-surface-background);
 }
@@ -32,7 +32,7 @@ a {
 
 .apresentacao-container h1 {
   font-family: "Kalam", cursive;
-  
+
   background: linear-gradient(
     90deg,
     var(--color-brand-primary) 0%,
@@ -48,7 +48,7 @@ h2 {
   font-family: "Poppins", sans-serif;
 }
 
-p{
+p {
   color: var(--color-text-secondary);
   font-family: "Poppins", sans-serif;
 }
@@ -62,11 +62,29 @@ p{
 
 /* MAIN */
 
-main {
+.sobre {
   background: var(--color-surface-primary);
 }
 
-.sobre h4 {
+h4 {
   color: var(--color-brand-secondary);
   font-family: "Kalam", cursive;
+}
+
+.card-projeto {
+  background: var(--color-surface-primary);
+}
+
+.card-projeto img {
+  background: linear-gradient(
+    90deg,
+    var(--color-brand-primary) 0%,
+    var(--color-brand-secondary) 100%
+  );
+}
+
+.projetos button {
+  background: var(--color-surface-secondary);
+  color: var(--color-text-primary-button-label, #f5f6f6);
+  font-family: "Poppins", sans-serif;
 }

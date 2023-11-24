@@ -23,10 +23,10 @@
 <body>
 
     <header class="flex flex-col">
-        <nav class="flex h-16 w-full p-5 justify-between items-center" id="navBar">
+        <nav class="flex h-16 w-full p-5 justify-between items-center z-10" id="navBar">
             <a href="#" class="logo text-2xl">&lt; GabrielliLima /&gt;</a>
             <button type="button" id="iconMenu">
-                <img src="./assets/list.svg" alt="" id="menuImage">
+                <img src="./assets/list.svg" alt="" id="menuImage" class="transition hover:scale-75">
             </button>
 
         </nav>
@@ -97,10 +97,77 @@
                     <p>A link agragator for social media.</p>
                 </div>
 
-                <button type="button"
+                <!-- Mais projetos -->
+                <div class="flex flex-col gap-6" id="maisProjetos">
+                    <div class="card-projeto p-4 flex flex-col items-start self-stretch rounded-2xl ">
+                        <img src="./assets/previews/sidebar-preview.svg" alt="" class="w-full h-auto rounded-t-lg">
+                        <div class="flex self-end">
+                            <img src="./assets/css3.svg" alt="" class="h-6 w-6">
+                            <img src="./assets/tailwindcss-icon.svg" alt="" class="h-6 w-6">
+                        </div>
+                        <h3 class="mb-2 text-xl leading-6">Sunnyside landing page</h3>
+                        <p>A link agragator for social media.</p>
+                    </div>
+                    <div class="card-projeto p-4 flex flex-col items-start self-stretch rounded-2xl ">
+                        <img src="./assets/previews/theme-switcher-preview.svg" alt="" class="w-full h-auto rounded-t-lg">
+                        <div class="flex self-end my-4">JS</div>
+                        <h3 class="mb-2">Water Reminder</h3>
+                        <p>A link agragator for social media.</p>
+                    </div>
+                    <div class="card-projeto p-4 flex flex-col items-start self-stretch rounded-2xl ">
+                        <img src="./assets/previews/countdown-preview.svg" alt="" class="w-full h-auto rounded-t-lg">
+                        <div class="flex self-end my-4">JS</div>
+                        <h3 class="mb-2">Calculadora imc</h3>
+                        <p>A link agragator for social media.</p>
+                    </div>
+                    <div class="card-projeto p-4 flex flex-col items-start self-stretch rounded-2xl ">
+                        <img src="./assets/previews/princing-table-preview.svg" alt="" class="w-full h-auto rounded-t-lg">
+                        <div class="flex self-end my-4">JS</div>
+                        <h3 class="mb-2">Calculadora imc</h3>
+                        <p>A link agragator for social media.</p>
+                    </div>
+                    <div class="card-projeto p-4 flex flex-col items-start self-stretch rounded-2xl ">
+                        <img src="./assets/previews/social-tree-preview.svg" alt="" class="w-full h-auto rounded-t-lg">
+                        <div class="flex self-end my-4">JS</div>
+                        <h3 class="mb-2">Calculadora imc</h3>
+                        <p>A link agragator for social media.</p>
+                    </div>
+                    <div class="card-projeto p-4 flex flex-col items-start self-stretch rounded-2xl ">
+                        <img src="./assets/previews/NLW-eSports-explorer-preview.svg" alt="" class="w-full h-auto rounded-t-lg">
+                        <div class="flex self-end my-4">JS</div>
+                        <h3 class="mb-2">Calculadora imc</h3>
+                        <p>A link agragator for social media.</p>
+                    </div>
+                    <div class="card-projeto p-4 flex flex-col items-start self-stretch rounded-2xl ">
+                        <img src="./assets/previews/paginadereceita-preview.svg" alt="" class="w-full h-auto rounded-t-lg">
+                        <div class="flex self-end my-4">JS</div>
+                        <h3 class="mb-2">Calculadora imc</h3>
+                        <p>A link agragator for social media.</p>
+                    </div>
+                    <div class="card-projeto p-4 flex flex-col items-start self-stretch rounded-2xl ">
+                        <img src="./assets/previews/counter-preview.svg" alt="" class="w-full h-auto rounded-t-lg">
+                        <div class="flex self-end my-4">JS</div>
+                        <h3 class="mb-2">Calculadora imc</h3>
+                        <p>A link agragator for social media.</p>
+                    </div>
+                    <div class="card-projeto p-4 flex flex-col items-start self-stretch rounded-2xl ">
+                        <img src="./assets/previews/loginform-preview.svg" alt="" class="w-full h-auto rounded-t-lg">
+                        <div class="flex self-end my-4">JS</div>
+                        <h3 class="mb-2">Calculadora imc</h3>
+                        <p>A link agragator for social media.</p>
+                    </div>
+                    <div class="card-projeto p-4 flex flex-col items-start self-stretch rounded-2xl ">
+                        <img src="./assets/previews/rocketnews-preview.svg" alt="" class="w-full h-auto rounded-t-lg">
+                        <div class="flex self-end my-4">JS</div>
+                        <h3 class="mb-2">Calculadora imc</h3>
+                        <p>A link agragator for social media.</p>
+                    </div>
+                </div>
+
+                <button type="button" id="btVerTodos"
                     class="w-auto h-auto py-4 px-6 mt-4 text-center text-base font-medium flex flex-row justify-center gap-2 border-none rounded-lg">
-                    Ver todos
-                    <img src="./assets/arrowRight.svg" alt="" class="w-6 h-6">
+                    <span id="textoBtVerTodos">Ver todos</span>
+                    <img src="./assets/arrowRight.svg" alt="" class="w-6 h-6" id="imgArrowRight">
                 </button>
                 <img src="./assets/graphic2.svg" alt="" class="absolute bottom-20 right-0">
             </div>

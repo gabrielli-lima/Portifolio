@@ -8,6 +8,8 @@ var btVerTodos = document.getElementById('btVerTodos');
 var maisProjetos = document.getElementById('maisProjetos')
 var textoBtVerTodos = document.getElementById('textoBtVerTodos')
 
+var cardProjeto = document.querySelectorAll('.card-projeto')
+
 iconMenu.addEventListener('click', function () {
   if (menuImage.src.includes('list.svg')) {
     menuImage.src = './assets/close.svg';
@@ -42,3 +44,23 @@ btVerTodos.onclick = function () {
     textoBtVerTodos.innerText = 'Ver todos'
   }
 }
+
+function handleMouseMove(card) {
+  card.classList.add('hovered');
+}
+
+function handleMouseOut(card) {
+  card.classList.remove('hovered');
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  cardProjeto.forEach(function (card) {
+    card.addEventListener('mousemove', function () {
+      handleMouseMove(card);
+    });
+    card.addEventListener('mouseout', function () {
+      handleMouseOut(card)
+    });
+  })
+})
+

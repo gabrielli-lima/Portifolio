@@ -71,12 +71,9 @@ h4 {
   background: var(--color-surface-primary);
 }
 
-.card-projeto img {
-  background: linear-gradient(
-    90deg,
-    var(--color-brand-primary) 0%,
-    var(--color-brand-secondary) 100%
-  );
+.techs i{
+  font-size: 1.5rem;
+  color: var(--color-brand-primary);
 }
 
 .projetos button {

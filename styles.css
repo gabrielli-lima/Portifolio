@@ -21,7 +21,7 @@ body {
   background: var(--color-surface-background);
 }
 
-#navBar{
+#navBar {
   background: var(--color-surface-background);
 }
 
@@ -47,7 +47,12 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
-h2, h3, p, footer, button[type="button"], button[type="submit"] {
+h2,
+h3,
+p,
+footer,
+button[type="button"],
+button[type="submit"] {
   color: var(--color-text-primary);
   font-family: "Poppins", sans-serif;
 }
@@ -71,11 +76,11 @@ h4 {
   background: var(--color-surface-primary);
 }
 
-.card-projeto a { 
+.card-projeto a {
   background: var(--color-surface-background);
 }
 
-.techs i{
+.techs i {
   font-size: 1.5rem;
   color: var(--color-brand-primary);
 }
@@ -84,37 +89,38 @@ h4 {
   background: var(--color-surface-secondary);
 }
 
-.contato{
+.contato {
   background: var(--color-surface-primary);
 }
 
-.icons-social-media button{
+.icons-social-media button {
   background: var(--color-surface-secondary);
 }
 
-.contato button[type="submit"]{
+.contato button[type="submit"] {
   background: var(--color-brand-primary);
 }
 
-form input, form textarea{
+form input,
+form textarea {
   background: var(--color-surface-background);
   color: var(--color-text-secondary);
 }
 
-form input:focus, form textarea:focus {
+form input:focus,
+form textarea:focus {
   border-color: var(--color-brand-secondary);
   box-shadow: 0 0 0 3px var(--color-brand-secondary);
 }
 
 /* Menu mobile */
 
-#menu{
+#menu {
   background: var(--color-surface-primary);
   color: var(--color-text-secondary);
-
 }
 
-#menu li:hover{
+#menu li:hover {
   color: var(--color-text-primary);
 }
 
@@ -123,10 +129,10 @@ form input:focus, form textarea:focus {
   box-shadow: 0px 0px 48px 0px rgba(128, 204, 255, 0.24);
 }
 
-.card-projeto:hover .links-projeto{
+.card-projeto:hover .links-projeto {
   display: flex;
 }
 
-.links-projeto a:hover{
+.links-projeto a:hover {
   outline: 2px solid var(--color-brand-primary);
 }

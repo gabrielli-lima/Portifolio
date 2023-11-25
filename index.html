@@ -61,7 +61,9 @@
 
     <main class="w-full h-auto flex flex-col ">
         <!-- SOBRE -->
-        <section class="sobre py-12 px-6 md:p-[72px] md:m-10 md:rounded-2xl md:flex md:flex-row justify-between items-center" id="sobre">
+        <section
+            class="sobre py-12 px-6 md:p-[72px] md:m-10 md:rounded-2xl md:flex md:flex-row justify-between items-center"
+            id="sobre">
             <img src="./assets/designer-girl-bro.svg" alt="" class="w-full mb-10 md:mb-0">
             <div class="lg:max-w-2xl md:max-w-xl">
                 <img src="./assets/tech-stack.svg" alt="">
@@ -90,71 +92,75 @@
             <h2 class="text-2xl font-medium">Dê uma olhada nos meus projetos em destaque</h2>
             <img src="./assets/graphic.svg" alt="" class="absolute left-0 md:left-16">
 
-            <div class="techs flex flex-col gap-6 justify-center items-center text-left mt-10">
-                <div class="card-projeto p-4 md:p-6 flex flex-col items-start self-stretch rounded-2xl ">
-                    <img src="./assets/previews/sunnyside-preview.svg" alt="" class="w-full h-auto rounded-t-lg">
-                    <div class="flex self-end my-4 gap-4">
-                        <i class="devicon-javascript-plain"></i>
-                        <i class="devicon-css3-plain-wordmark"></i>
-                        <i class="devicon-html5-plain-wordmark"></i>
+            <div class="flex flex-col gap-6 justify-center items-center text-left mt-10">
+                <div class="flex flex-col gap-6 md:grid lg:grid-cols-3 md:grid-cols-1 md:gap-8">
+                    <div class="card-projeto p-4 md:p-6 flex flex-col items-start self-stretch rounded-2xl ">
+                        <img src="./assets/previews/sunnyside-preview.svg" alt="" class="w-full h-auto rounded-t-lg">
+                        <div class="flex self-end my-4 gap-4">
+                            <i class="devicon-javascript-plain"></i>
+                            <i class="devicon-css3-plain-wordmark"></i>
+                            <i class="devicon-html5-plain-wordmark"></i>
+                        </div>
+                        <h3 class="mb-2 text-xl leading-6">Sunnyside landing page</h3>
+                        <p>Este projeto é uma solução para o desafio de landing page da agência Sunnyside no Frontend
+                            Mentor.</p>
+                        <div class="links-projeto absolute hidden flex-col self-end -m-2 gap-2">
+                            <a href="https://gabrielli-lima.github.io/Sunnyside-agency-landing-page/"
+                                class="rounded-lg p-3" title="Ver projeto">
+                                <img src="./assets/arrow-up-right.svg" alt="">
+                            </a>
+                            <a href="https://github.com/gabrielli-lima/Sunnyside-agency-landing-page"
+                                class="rounded-lg p-3" title="Github">
+                                <img src="./assets/github-icon.svg" alt="">
+                            </a>
+                        </div>
                     </div>
-                    <h3 class="mb-2 text-xl leading-6">Sunnyside landing page</h3>
-                    <p>Este projeto é uma solução para o desafio de landing page da agência Sunnyside no Frontend
-                        Mentor.</p>
-                    <div class="links-projeto absolute hidden flex-col self-end -m-2 gap-2">
-                        <a href="https://gabrielli-lima.github.io/Sunnyside-agency-landing-page/" class="rounded-lg p-3"
-                            title="Ver projeto">
-                            <img src="./assets/arrow-up-right.svg" alt="">
-                        </a>
-                        <a href="https://github.com/gabrielli-lima/Sunnyside-agency-landing-page" class="rounded-lg p-3"
-                            title="Github">
-                            <img src="./assets/github-icon.svg" alt="">
-                        </a>
+                    <div class="card-projeto p-4 flex flex-col items-start self-stretch rounded-2xl ">
+                        <img src="./assets/previews/water-reminder-preview.svg" alt=""
+                            class="w-full h-auto rounded-t-lg">
+                        <div class="flex self-end my-4 gap-4">
+                            <i class="devicon-react-original"></i>
+                            <i class="devicon-typescript-plain"></i>
+                            <i class="devicon-tailwindcss-plain text-slate-100"></i>
+                        </div>
+                        <h3 class="mb-2 text-xl leading-6">Water Reminder</h3>
+                        <p>Neste projeto foi desenvolvido um lembrete para motivar você a beber água.</p>
+                        <div class="links-projeto absolute hidden flex-col self-end -m-2 gap-2">
+                            <a href="https://gabrielli-lima.github.io/water-reminder/" class="rounded-lg p-3"
+                                title="Ver projeto">
+                                <img src="./assets/arrow-up-right.svg" alt="">
+                            </a>
+                            <a href="https://github.com/gabrielli-lima/water-reminder" class="rounded-lg p-3"
+                                title="Github">
+                                <img src="./assets/github-icon.svg" alt="">
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="card-projeto p-4 flex flex-col items-start self-stretch rounded-2xl ">
-                    <img src="./assets/previews/water-reminder-preview.svg" alt="" class="w-full h-auto rounded-t-lg">
-                    <div class="flex self-end my-4 gap-4">
-                        <i class="devicon-react-original"></i>
-                        <i class="devicon-typescript-plain"></i>
-                        <i class="devicon-tailwindcss-plain text-slate-100"></i>
-                    </div>
-                    <h3 class="mb-2 text-xl leading-6">Water Reminder</h3>
-                    <p>Neste projeto foi desenvolvido um lembrete para motivar você a beber água.</p>
-                    <div class="links-projeto absolute hidden flex-col self-end -m-2 gap-2">
-                        <a href="https://gabrielli-lima.github.io/water-reminder/" class="rounded-lg p-3"
-                            title="Ver projeto">
-                            <img src="./assets/arrow-up-right.svg" alt="">
-                        </a>
-                        <a href="https://github.com/gabrielli-lima/water-reminder" class="rounded-lg p-3"
-                            title="Github">
-                            <img src="./assets/github-icon.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="card-projeto p-4 flex flex-col items-start self-stretch rounded-2xl ">
-                    <img src="./assets/previews/calculadora-imc-preview.svg" alt="" class="w-full h-auto rounded-t-lg">
-                    <div class="flex self-end my-4 gap-4">
-                        <i class="devicon-react-original"></i>
-                        <i class="devicon-typescript-plain"></i>
-                        <i class="devicon-tailwindcss-plain text-slate-100"></i>
-                    </div>
-                    <h3 class="mb-2 text-xl leading-6">Calculadora imc</h3>
-                    <p>Calculadora de IMC (Índice de Massa Corporal).</p>
-                    <div class="links-projeto absolute hidden flex-col self-end -m-2 gap-2">
-                        <a href="https://gabrielli-lima.github.io/calculadora-imc-react/" class="rounded-lg p-3"
-                            title="Ver projeto">
-                            <img src="./assets/arrow-up-right.svg" alt="">
-                        </a>
-                        <a href="https://github.com/gabrielli-lima/calculadora-imc-react" class="rounded-lg p-3"
-                            title="Github">
-                            <img src="./assets/github-icon.svg" alt="">
-                        </a>
+                    <div class="card-projeto p-4 flex flex-col items-start self-stretch rounded-2xl ">
+                        <img src="./assets/previews/calculadora-imc-preview.svg" alt=""
+                            class="w-full h-auto rounded-t-lg">
+                        <div class="flex self-end my-4 gap-4">
+                            <i class="devicon-react-original"></i>
+                            <i class="devicon-typescript-plain"></i>
+                            <i class="devicon-tailwindcss-plain text-slate-100"></i>
+                        </div>
+                        <h3 class="mb-2 text-xl leading-6">Calculadora imc</h3>
+                        <p>Calculadora de IMC (Índice de Massa Corporal).</p>
+                        <div class="links-projeto absolute hidden flex-col self-end -m-2 gap-2">
+                            <a href="https://gabrielli-lima.github.io/calculadora-imc-react/" class="rounded-lg p-3"
+                                title="Ver projeto">
+                                <img src="./assets/arrow-up-right.svg" alt="">
+                            </a>
+                            <a href="https://github.com/gabrielli-lima/calculadora-imc-react" class="rounded-lg p-3"
+                                title="Github">
+                                <img src="./assets/github-icon.svg" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Mais projetos -->
-                <div class="flex flex-col gap-6" id="maisProjetos">
+                <div class="flex flex-col gap-6 md:grid lg:grid-cols-3 md:grid-cols-1 md:gap-8" id="maisProjetos">
                     <div class="card-projeto p-4 flex flex-col items-start self-stretch rounded-2xl ">
                         <img src="./assets/previews/sidebar-preview.svg" alt="" class="w-full h-auto rounded-t-lg">
                         <div class="flex self-end my-4 gap-4">
@@ -361,14 +367,14 @@
                         </div>
                     </div>
                 </div>
-
-                <button type="button" id="btVerTodos"
-                    class="w-auto h-auto py-4 px-6 mt-4 text-center text-base font-medium flex flex-row justify-center gap-2 border-none rounded-lg">
-                    <span id="textoBtVerTodos">Ver todos</span>
-                    <img src="./assets/arrowRight.svg" alt="" class="w-6 h-6" id="imgArrowRight">
-                </button>
-                <img src="./assets/graphic2.svg" alt="" class="absolute bottom-20 right-0">
             </div>
+
+            <button type="button" id="btVerTodos"
+                class="w-auto h-auto py-4 px-6 mt-10 mx-auto text-center text-base font-medium flex flex-row justify-center gap-2 border-none rounded-lg ">
+                <span id="textoBtVerTodos">Ver todos</span>
+                <img src="./assets/arrowRight.svg" alt="" class="w-6 h-6" id="imgArrowRight">
+            </button>
+            <img src="./assets/graphic2.svg" alt="" class="absolute bottom-20 right-0">
         </section>
 
         <!-- CONTATO -->

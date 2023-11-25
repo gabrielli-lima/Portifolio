@@ -67,7 +67,7 @@ button[type="submit"] {
   background: var(--color-surface-primary);
 }
 
-.sobre p{
+.sobre p {
   color: var(--color-text-secondary);
 }
 
@@ -84,7 +84,7 @@ h4 {
   background: var(--color-surface-background);
 }
 
-.techs i {
+.projetos i {
   font-size: 1.5rem;
   color: var(--color-brand-primary);
 }
@@ -124,7 +124,8 @@ form textarea:focus {
   color: var(--color-text-secondary);
 }
 
-#menu li:hover, #menuDesktop li:hover {
+#menu li:hover,
+#menuDesktop li:hover {
   color: var(--color-text-primary);
   font-weight: 700;
 }
@@ -143,16 +144,16 @@ form textarea:focus {
 }
 
 /* Menu desktop */
-#menuDesktop{
+#menuDesktop {
   display: none;
   color: var(--color-text-secondary);
 }
 
 @media (min-width: 768px) {
-  #iconMenu{
+  #iconMenu {
     display: none;
   }
-  #menuDesktop{
+  #menuDesktop {
     display: flex;
   }
 }

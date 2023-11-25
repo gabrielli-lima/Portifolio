@@ -35,7 +35,7 @@ iconMenu.addEventListener('click', function () {
 maisProjetos.style.display = 'none';
 btVerTodos.onclick = function () {
   if (maisProjetos.style.display === 'none') {
-    maisProjetos.style.display = 'flex';
+    maisProjetos.style.display = 'grid';
 
     textoBtVerTodos.innerText = 'Mostrar menos'
     menuImage.src = './assets/list.svg';
@@ -63,4 +63,3 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   })
 })
-

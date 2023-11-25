@@ -44,22 +44,3 @@ btVerTodos.onclick = function () {
     textoBtVerTodos.innerText = 'Ver todos'
   }
 }
-
-function handleMouseMove(card) {
-  card.classList.add('hovered');
-}
-
-function handleMouseOut(card) {
-  card.classList.remove('hovered');
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-  cardProjeto.forEach(function (card) {
-    card.addEventListener('mousemove', function () {
-      handleMouseMove(card);
-    });
-    card.addEventListener('mouseout', function () {
-      handleMouseOut(card)
-    });
-  })
-})

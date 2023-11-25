@@ -92,7 +92,7 @@
             <h2 class="text-2xl font-medium">Dê uma olhada nos meus projetos em destaque</h2>
             <img src="./assets/graphic.svg" alt="" class="absolute left-0 md:left-16">
 
-            <div class="flex flex-col gap-6 justify-center items-center text-left mt-10">
+            <div class="flex flex-col gap-6 justify-center items-center text-left mt-10 md:gap-8">
                 <div class="flex flex-col gap-6 md:grid lg:grid-cols-3 md:grid-cols-1 md:gap-8">
                     <div class="card-projeto p-4 md:p-6 flex flex-col items-start self-stretch rounded-2xl ">
                         <img src="./assets/previews/sunnyside-preview.svg" alt="" class="w-full h-auto rounded-t-lg">
@@ -378,18 +378,23 @@
         </section>
 
         <!-- CONTATO -->
-        <section class="contato py-12 px-6" id="contato">
-            <img src="./assets/cute-avatar.svg" alt="">
-            <h4 class="mt-10 mb-2 text-base leading-4">Contato</h4>
-            <h2 class="text-2xl font-medium">Gostou do meu trabalho? Entre em contato comigo</h2>
-            <p class="my-4">I’m always up for a chat. Pop me an email at <a href="mailto:gabriellilima2@hotmail.com"
-                    class="underline">gabriellilima2@hotmail.com</a> or
-                give me a shout on social media. </p>
-            <div class="icons-social-media flex flex-row gap-2">
-                <button type="button" class="rounded-lg p-3"><img src="./assets/github-icon.svg" alt=""></button>
-                <button type="button" class="rounded-lg p-3"><img src="./assets/linkedin-icon.svg" alt=""></button>
+        <section
+            class="contato py-12 px-6 md:p-[72px] md:m-10 md:rounded-2xl lg:flex lg:flex-row lg:justify-between lg:gap-32"
+            id="contato">
+            <div class="lg:max-w-[600px]">
+                <img src="./assets/cute-avatar.svg" alt="">
+                <h4 class="mt-10 mb-2 text-base leading-4">Contato</h4>
+                <h2 class="text-2xl font-medium">Gostou do meu trabalho? Entre em contato comigo</h2>
+                <p class="my-4 text-base">I’m always up for a chat. Pop me an email at <a
+                        href="mailto:gabriellilima2@hotmail.com" class="underline">gabriellilima2@hotmail.com</a> or
+                    give me a shout on social media. </p>
+                <div class="icons-social-media flex flex-row gap-2">
+                    <button type="button" class="rounded-lg p-3"><img src="./assets/github-icon.svg" alt=""></button>
+                    <button type="button" class="rounded-lg p-3"><img src="./assets/linkedin-icon.svg" alt=""></button>
+                </div>
             </div>
-            <form action="" class="mt-12 flex flex-col">
+
+            <form action="" class="mt-12 flex flex-col lg:w-[480px] lg:mt-0">
                 <div>
                     <input type="text" name="" id="" placeholder="Nome" aria-label="Nome"
                         class="flex w-full py-3 px-4 text-base items-center self-stretch rounded-lg border-solid shadow-sm focus:outline-none focus:ring">
@@ -399,7 +404,7 @@
                         class="flex w-full py-3 px-4 my-4 text-base items-center self-stretch rounded-lg border-solid shadow-sm focus:outline-none focus:ring">
                 </div>
                 <div>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Sua mensagem" aria-label="Sua mensagem"
+                    <textarea name="" id="" cols="30" rows="6" placeholder="Sua mensagem" aria-label="Sua mensagem"
                         class="flex w-full py-3 px-4 text-base items-center self-stretch rounded-lg border-solid shadow-sm focus:outline-none focus:ring"></textarea>
                 </div>
                 <button type="submit"

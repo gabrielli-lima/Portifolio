@@ -124,8 +124,9 @@ form textarea:focus {
   color: var(--color-text-secondary);
 }
 
-#menu li:hover {
+#menu li:hover, #menuDesktop li:hover {
   color: var(--color-text-primary);
+  font-weight: 700;
 }
 
 .hovered {
@@ -139,4 +140,19 @@ form textarea:focus {
 
 .links-projeto a:hover {
   outline: 2px solid var(--color-brand-primary);
+}
+
+/* Menu desktop */
+#menuDesktop{
+  display: none;
+  color: var(--color-text-secondary);
+}
+
+@media (min-width: 768px) {
+  #iconMenu{
+    display: none;
+  }
+  #menuDesktop{
+    display: flex;
+  }
 }

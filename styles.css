@@ -54,7 +54,7 @@ footer,
 button[type="button"],
 button[type="submit"] {
   color: var(--color-text-primary);
-  font-family: "Poppins", sans-serif;
+  font-family: "Heebo", sans-serif;
 }
 
 .apresentacao-container button {
@@ -65,6 +65,10 @@ button[type="submit"] {
 
 .sobre {
   background: var(--color-surface-primary);
+}
+
+.sobre p{
+  color: var(--color-text-secondary);
 }
 
 h4 {

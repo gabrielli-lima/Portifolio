@@ -20,7 +20,7 @@
 
     <!-- Biblioteca de icones -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
 </head>
 
 <body>
@@ -40,9 +40,9 @@
 
         </nav>
 
-        <div class="flex flex-col-reverse md:flex-row justify-between items-center items-center w-auto p-6 lg:py-24 lg:px-28 md:py-12 md:px-14 word-break-break-word"
+        <div class="relative flex flex-col-reverse lg:flex-row justify-between items-center w-full p-6 lg:py-24 lg:px-28 md:py-12 md:px-14 word-break-break-word"
             id="headerConteudo">
-            <div class="apresentacao-container flex flex-col max-w-2xl">
+            <div class="apresentacao-container flex flex-col max-w-[600px] h-auto">
                 <h1 class="my-6 self-stretch text-[40px] leading-[56px] font-normal">Oi, meu nome é Gabrielli!</h1>
                 <h2 class="text-2xl font-medium mb-4 self-stretch">Desenvolvedora Front-End</h2>
                 <p class="mb-8 self-stretch text-base font-light">Gosto de resolver problemas e transformá-los em
@@ -50,27 +50,36 @@
                     visuais. Crio aplicações para web usando tecnologias como JavaScript e ReactJS.
                 </p>
                 <button type="button"
-                    class="text-center text-base font-medium flex flex-row justify-center self-end md:self-start flex-wrap w-auto h-auto py-4 px-6 gap-2 border-none rounded-lg">
-                    Entre em contato
-                    <img src="./assets/arrowRight.svg" alt="" class="w-6 h-6">
+                    class="relative text-center text-base font-medium flex flex-row justify-center items-center self-end md:self-start flex-wrap w-auto h-auto py-4 px-6 gap-2 border-none rounded-lg shadow-2xl overflow-hidden transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-[#980046] before:duration-700 before:ease-out hover:shadow-[rgb(152,0,70,0.5)] hover:before:h-56 hover:before:w-56">
+                    <span class="relative z-10">Entre em contato</span>
+                    <img src="./assets/arrowRight.svg" alt="" class="w-6 h-6 relative z-10">
                 </button>
             </div>
-            <img src="./assets/woman-at-desk.svg" alt="" class="w-auto h-[266px]">
+            <img src="./assets/computer.svg" alt="" class="w-[320px] lg:w-[490px] h-auto">
+            <a href="#sobre" class="absolute -bottom-20 left-[20%] lg:-bottom-5 lg:left-[45%]">
+                <img src="./assets/graphic-arrow-down.svg" alt="">
+            </a>
         </div>
     </header>
 
     <main class="w-full h-auto flex flex-col ">
         <!-- SOBRE -->
         <section
-            class="sobre py-12 px-6 md:p-[72px] md:m-10 md:rounded-2xl md:flex md:flex-row justify-between items-center"
+            class="sobre py-12 px-6 lg:p-[72px] md:m-10 md:rounded-2xl flex flex-col lg:flex lg:flex-row justify-between items-start lg:gap-10"
             id="sobre">
-            <img src="./assets/designer-girl-bro.svg" alt="" class="w-full mb-10 md:mb-0">
-            <div class="lg:max-w-2xl md:max-w-xl">
-                <img src="./assets/tech-stack.svg" alt="">
+            <img src="./assets/woman-at-desk-with-dog.svg" alt="" class="max-w-[450px] w-full h-auto mb-10 lg:mb-0 mx-auto">
+            <div class="lg:max-w-xl w-full">
+                <div class="flex flex-row gap-6 flex-wrap">
+                    <i class="devicon-javascript-plain"></i>
+                    <i class="devicon-react-original"></i>
+                    <i class="devicon-typescript-plain"></i>
+                    <i class="devicon-html5-plain-wordmark"></i>
+                    <i class="devicon-css3-plain-wordmark"></i>
+                    <i class="devicon-tailwindcss-plain"></i>
+                    <i class="devicon-bootstrap-plain"></i>
+                </div>
                 <h4 class="mt-8 mb-2 text-base leading-4">Sobre mim</h4>
-                <h2 class="text-2xl font-medium">Entusiasta de front-end dedicada a proporcionar experiências incríveis
-                    na
-                    web</h2>
+                <h2 class="text-2xl font-medium">Dedicada a proporcionar experiências incríveis na web</h2>
                 <p class="mt-4 text-base font-light">
                     Atualmente, estudo Análise e Desenvolvimento de Sistemas. Em 2019, concluí o curso técnico de
                     Desenvolvimento de Sistemas. Gosto de resolver problemas e ajudar pessoas, e para mim, a melhor
@@ -90,7 +99,7 @@
         <section class="projetos py-12 px-6 md:py-[72px] md:px-28 text-center relative" id="projetos">
             <h4 class="mb-2 text-base leading-4">Projetos</h4>
             <h2 class="text-2xl font-medium">Dê uma olhada nos meus projetos em destaque</h2>
-            <img src="./assets/graphic.svg" alt="" class="absolute left-0 md:left-16">
+            <img src="./assets/graphic1.svg" alt="" class="w-[62px] absolute left-16 top-28 animate-pulse">
 
             <div class="flex flex-col gap-6 justify-center items-center text-left mt-10 md:gap-8">
                 <div class="flex flex-col gap-6 md:grid lg:grid-cols-3 md:grid-cols-1 md:gap-8">
@@ -121,7 +130,7 @@
                         <div class="flex self-end my-4 gap-4">
                             <i class="devicon-react-original"></i>
                             <i class="devicon-typescript-plain"></i>
-                            <i class="devicon-tailwindcss-plain text-slate-100"></i>
+                            <i class="devicon-tailwindcss-plain"></i>
                         </div>
                         <h3 class="mb-2 text-xl leading-6">Water Reminder</h3>
                         <p>Neste projeto foi desenvolvido um lembrete para motivar você a beber água.</p>
@@ -142,7 +151,7 @@
                         <div class="flex self-end my-4 gap-4">
                             <i class="devicon-react-original"></i>
                             <i class="devicon-typescript-plain"></i>
-                            <i class="devicon-tailwindcss-plain text-slate-100"></i>
+                            <i class="devicon-tailwindcss-plain"></i>
                         </div>
                         <h3 class="mb-2 text-xl leading-6">Calculadora imc</h3>
                         <p>Calculadora de IMC (Índice de Massa Corporal).</p>
@@ -370,11 +379,12 @@
             </div>
 
             <button type="button" id="btVerTodos"
-                class="w-auto h-auto py-4 px-6 mt-10 mx-auto text-center text-base font-medium flex flex-row justify-center gap-2 border-none rounded-lg ">
-                <span id="textoBtVerTodos">Ver todos</span>
-                <img src="./assets/arrowRight.svg" alt="" class="w-6 h-6" id="imgArrowRight">
+                class="w-auto h-auto py-4 px-6 mt-10 mx-auto text-center text-base font-medium flex flex-row justify-center gap-2 border-none rounded-lg relative hover:before:bg-[#009AFF] overflow-hidden shadow-2xl transition-all before:absolute before:inset-0 before:right-auto before:z-0 before:h-full before:w-0 before:bg-[#009AFF] before:transition-all before:duration-500 hover:text-white hover:shadow-[rgb(125,204,255,0.5)] hover:before:left-0 hover:before:w-full">
+
+                <span id="textoBtVerTodos" class="z-10">Ver todos</span>
+                <img src="./assets/arrowRight.svg" alt="" class="w-6 h-6 z-10" id="imgArrowRight">
             </button>
-            <img src="./assets/graphic2.svg" alt="" class="absolute bottom-20 right-0">
+            <img src="./assets/graphic2.svg" alt="" class="absolute bottom-8 right-14 animate-pulse">
         </section>
 
         <!-- CONTATO -->
@@ -408,9 +418,9 @@
                         class="flex w-full py-3 px-4 text-base items-center self-stretch rounded-lg border-solid shadow-sm focus:outline-none focus:ring"></textarea>
                 </div>
                 <button type="submit"
-                    class="text-center text-base font-medium flex flex-row justify-center self-start flex-wrap mt-8 w-auto h-auto py-4 px-6 gap-2 border-none rounded-lg">
-                    Enviar mensagem
-                    <img src="./assets/arrowRight.svg" alt="" class="w-6 h-6">
+                    class="relative text-center text-base font-medium flex flex-row justify-center items-center self-start flex-wrap mt-8 w-auto h-auto py-4 px-6 gap-2 border-none rounded-lg shadow-2xl overflow-hidden transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-[#980046] before:duration-700 before:ease-out hover:shadow-[rgb(152,0,70,0.5)] hover:before:h-56 hover:before:w-56">
+                    <span class="z-10">Enviar mensagem</span>
+                    <img src="./assets/arrowRight.svg" alt="" class="w-6 h-6 z-10">
                 </button>
             </form>
         </section>

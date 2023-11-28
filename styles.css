@@ -57,8 +57,10 @@ button[type="submit"] {
   font-family: "Heebo", sans-serif;
 }
 
-.apresentacao-container button {
+.apresentacao-container a {
   background: var(--color-brand-primary);
+  color: var(--color-text-primary);
+  font-family: "Heebo", sans-serif;
 }
 
 /* MAIN */
@@ -89,12 +91,20 @@ i {
   color: var(--color-brand-primary);
 }
 
-.projetos button {
+#projetos button {
   background: var(--color-surface-secondary);
 }
 
-.contato {
+#contato {
   background: var(--color-surface-primary);
+}
+
+.profile-photo {
+  background: linear-gradient(
+    90deg,
+    var(--color-brand-primary) 0%,
+    var(--color-brand-secondary) 100%
+  );
 }
 
 .icons-social-media a {
@@ -105,7 +115,11 @@ i {
   background: var(--color-brand-primary);
 }
 
-.contato button[type="submit"] {
+#contato p > a {
+  color: var(--color-brand-secondary);
+}
+
+#contato button[type="submit"] {
   background: var(--color-brand-primary);
 }
 
@@ -163,4 +177,14 @@ form textarea:focus {
   #menuDesktop {
     display: flex;
   }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-primary);
+  border-radius: 10px;
 }

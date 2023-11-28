@@ -25,7 +25,7 @@
 
 <body>
 
-    <header class="flex flex-col" id="header">
+    <header id="header" class="flex flex-col">
         <nav class="flex h-16 w-full p-5 md:px-20 justify-between items-center z-10 md:shadow-lg" id="navBar">
             <a href="#" class="logo text-2xl">&lt; GabrielliLima /&gt;</a>
             <ul class="flex flex-row gap-4 text-base text-center" id="menuDesktop">
@@ -49,11 +49,11 @@
                     soluções
                     visuais. Crio aplicações para web usando tecnologias como JavaScript e ReactJS.
                 </p>
-                <button type="button"
+                <a href="#contato"
                     class="relative text-center text-base font-medium flex flex-row justify-center items-center self-end md:self-start flex-wrap w-auto h-auto py-4 px-6 gap-2 border-none rounded-lg shadow-2xl overflow-hidden transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-[#980046] before:duration-700 before:ease-out hover:shadow-[rgb(152,0,70,0.5)] hover:before:h-56 hover:before:w-56">
                     <span class="relative z-10">Entre em contato</span>
                     <img src="./assets/arrowRight.svg" alt="" class="w-6 h-6 relative z-10">
-                </button>
+                </a>
             </div>
             <img src="./assets/computer.svg" alt="" class="w-[320px] lg:w-[490px] h-auto">
             <a href="#sobre" class="absolute -bottom-20 left-[20%] lg:-bottom-5 lg:left-[45%]">
@@ -62,7 +62,7 @@
         </div>
     </header>
 
-    <main class="w-full h-auto flex flex-col ">
+    <main class="w-full h-auto flex flex-col">
         <!-- SOBRE -->
         <section
             class="sobre py-12 px-6 lg:p-[72px] md:m-10 md:rounded-2xl flex flex-col lg:flex lg:flex-row justify-between items-start lg:gap-10"
@@ -97,7 +97,7 @@
         </section>
 
         <!-- PROJETOS -->
-        <section class="projetos py-12 px-6 md:py-[72px] md:px-28 text-center relative" id="projetos">
+        <section id="projetos" class="py-12 px-6 md:py-[72px] md:px-28 text-center relative">
             <h4 class="mb-2 text-base leading-4">Projetos</h4>
             <h2 class="text-2xl font-medium">Dê uma olhada nos meus projetos em destaque</h2>
             <img src="./assets/graphic1.svg" alt="" class="w-[62px] absolute left-16 top-28 animate-pulse">
@@ -389,17 +389,18 @@
         </section>
 
         <!-- CONTATO -->
-        <section
-            class="contato py-12 px-6 md:p-[72px] md:m-10 md:rounded-2xl lg:flex lg:flex-row lg:justify-between lg:gap-32"
-            id="contato">
+        <section id="contato"
+            class="py-12 px-6 md:p-[72px] md:m-10 md:rounded-2xl lg:flex lg:flex-row lg:justify-between lg:gap-32">
             <div class="lg:max-w-[600px]">
-                <img src="https://avatars.githubusercontent.com/u/61292403?v=4" alt=""
-                    class="profile-photo w-[180px] h-[180px] rounded-full">
+                <div class="profile-photo w-[180px] h-[180px] rounded-full flex justify-center items-center">
+                    <img src="https://avatars.githubusercontent.com/u/61292403?v=4" alt=""
+                        class="w-[170px] h-[170px] rounded-full">
+                </div>
                 <h4 class="mt-10 mb-2 text-base leading-4">Contato</h4>
                 <h2 class="text-2xl font-medium">Gostou do meu trabalho? Entre em contato comigo</h2>
                 <p class="my-4 text-base">Estou sempre pronto para conversar. Envie um e-mail para
-                    <a href="mailto:gabriellilima2@hotmail.com" class="underline">gabriellilima2@hotmail.com </a>
-                    ou entre em contato comigo pelas redes sociais.
+                    <a href="mailto:gabriellilima2@hotmail.com" class="underline">gabriellilima2@hotmail.com</a> ou
+                    entre em contato comigo pelas redes sociais.
                 </p>
                 <div class="icons-social-media flex flex-row gap-2">
                     <a href="https://github.com/gabrielli-lima" class="rounded-lg p-3">

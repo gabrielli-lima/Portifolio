@@ -39,7 +39,6 @@ btVerTodos.onclick = function () {
     maisProjetos.style.display = 'grid';
 
     textoBtVerTodos.innerText = 'Mostrar menos'
-    menuImage.src = './assets/list.svg';
   } else {
     projetos.scrollIntoView();
     maisProjetos.style.display = 'none';

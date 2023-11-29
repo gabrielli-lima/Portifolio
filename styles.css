@@ -149,11 +149,31 @@ form textarea:focus {
   font-weight: 700;
 }
 
+.card-projeto {
+  max-width: 320px;
+  max-height: 340px;
+  overflow: hidden;
+}
+
 .card-projeto:hover {
   outline: 2px solid var(--color-brand-secondary);
   box-shadow: 0px 0px 48px 0px rgba(128, 204, 255, 0.24);
   transform: scale(1.1);
   transition: ease-in-out 0.2s;
+  max-height: 100%;
+  overflow: visible;
+  margin: 5px 0;
+}
+
+.card-projeto:hover p {
+  white-space: unset;
+}
+
+.card-projeto p {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .card-projeto:hover .links-projeto {
@@ -176,6 +196,10 @@ form textarea:focus {
   }
   #menuDesktop {
     display: flex;
+  }
+  .card-projeto {
+    max-width: 380px;
+    max-height: 400px;
   }
 }
 

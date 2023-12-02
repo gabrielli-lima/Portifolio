@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="scroll-smooth">
+<html lang="pt-br" class="scroll-smooth" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -20,19 +20,21 @@
 
     <!-- Biblioteca de icones -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
 </head>
 
 <body>
 
     <header id="header" class="flex flex-col">
-        <nav class="flex h-16 w-full p-5 md:px-20 justify-between items-center z-10 md:shadow-lg" id="navBar">
+        <nav class="flex h-16 w-full p-5 md:px-20 justify-between items-center z-20 md:shadow-lg" id="navBar">
             <a href="#" class="logo text-2xl">&lt; GabrielliLima /&gt;</a>
             <ul class="flex flex-row gap-4 text-base text-center" id="menuDesktop">
                 <li class="p-2"><a href="#">Home</a></li>
                 <li class="p-2"><a href="#sobre">Sobre</a></li>
                 <li class="p-2"><a href="#projetos">Projetos</a></li>
                 <li class="p-2"><a href="#contato">Contato</a></li>
+                <button type="button" name="theme" title="Alterar tema">
+                    <img src="./assets/light-theme-icon.svg" alt="" class="w-6 h-6" id="icon-tema">
+                </button>
             </ul>
             <button type="button" id="iconMenu">
                 <img src="./assets/list.svg" alt="" id="menuImage" class="transition hover:scale-75">
@@ -50,7 +52,7 @@
                     visuais. Crio aplicações para web usando tecnologias como JavaScript e ReactJS.
                 </p>
                 <a href="#contato"
-                    class="relative text-center text-base font-medium flex flex-row justify-center items-center self-end md:self-start flex-wrap w-auto h-auto py-4 px-6 gap-2 border-none rounded-lg shadow-2xl overflow-hidden transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-[#980046] before:duration-700 before:ease-out hover:shadow-[rgb(152,0,70,0.5)] hover:before:h-56 hover:before:w-56">
+                    class="relative text-center text-base font-medium flex flex-row justify-center items-center self-end md:self-start flex-wrap w-auto h-auto py-4 px-6 gap-2 border-none rounded-lg shadow-2xl overflow-hidden transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-[#980046] before:duration-500 before:ease-out hover:shadow-[rgb(152,0,70,0.5)] hover:before:h-56 hover:before:w-56">
                     <span class="relative z-10">Entre em contato</span>
                     <img src="./assets/arrowRight.svg" alt="" class="w-6 h-6 relative z-10">
                 </a>
@@ -426,7 +428,7 @@
                         class="flex w-full py-3 px-4 text-base items-center rounded-lg border-solid shadow-sm focus:outline-none focus:ring"></textarea>
                 </div>
                 <button type="submit"
-                    class="relative text-center text-base font-medium flex flex-row justify-center items-center self-start flex-wrap mt-8 w-auto h-auto py-4 px-6 gap-2 border-none rounded-lg shadow-2xl overflow-hidden transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-[#980046] before:duration-700 before:ease-out hover:shadow-[rgb(152,0,70,0.5)] hover:before:h-56 hover:before:w-56">
+                    class="relative text-center text-base font-medium flex flex-row justify-center items-center self-start flex-wrap mt-8 w-auto h-auto py-4 px-6 gap-2 border-none rounded-lg shadow-2xl overflow-hidden transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-[#980046] before:duration-500 before:ease-out hover:shadow-[rgb(152,0,70,0.5)] hover:before:h-56 hover:before:w-56">
                     <span class="z-10">Enviar mensagem</span>
                     <img src="./assets/arrowRight.svg" alt="" class="w-6 h-6 z-10">
                 </button>
@@ -448,13 +450,19 @@
     </footer>
 
     <!-- Menu mobile -->
-    <div class="hidden top-16 right-0 h-screen py-4 px-6 w-3/4" id="menu">
-        <ul class="flex flex-col gap-6 text-base text-right">
-            <li><a href="#">Home</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
+    <div class="hidden top-16 right-0 h-screen py-4 px-6 w-3/4 z-20" id="menu">
+        <div class="flex flex-col w-full gap-6">
+            <ul class="flex flex-col gap-6 text-base text-right">
+                <li><a href="#">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <hr class="w-full">
+            <!-- <button type="button" name="theme">
+                <img src="./assets/light-theme-icon.svg" alt="" class="w-6 h-6 icon-tema">
+            </button> -->
+        </div>
     </div>
 
     <script src="./script.js"></script>

@@ -15,10 +15,13 @@
   box-sizing: border-box;
 }
 
+html[data-theme="dark"] {
+  background: var(--color-surface-background);
+}
+
 body {
   width: 100%;
   height: 100vh;
-  background: var(--color-surface-background);
 }
 
 #navBar {
@@ -91,7 +94,8 @@ i {
   color: var(--color-brand-primary);
 }
 
-#projetos button {
+#btVerTodos,
+.icons-social-media a {
   background: var(--color-surface-secondary);
 }
 
@@ -105,10 +109,6 @@ i {
     var(--color-brand-primary) 0%,
     var(--color-brand-secondary) 100%
   );
-}
-
-.icons-social-media a {
-  background: var(--color-surface-secondary);
 }
 
 .icons-social-media a:hover {
@@ -211,4 +211,91 @@ form textarea:focus {
 ::-webkit-scrollbar-thumb {
   background: var(--color-brand-primary);
   border-radius: 10px;
+}
+
+/* --- Modo claro --- */
+
+html[data-theme="light"] body {
+  background: #ffebf4;
+}
+
+/* primarry */
+html[data-theme="light"] .logo,
+html[data-theme="light"] h2,
+html[data-theme="light"] h3,
+html[data-theme="light"] p,
+html[data-theme="light"] footer {
+  color: #980046;
+}
+
+/* secondary */
+html[data-theme="light"] p {
+  color: #490022;
+}
+html[data-theme="light"] .card-projeto,
+html[data-theme="light"] .sobre,
+html[data-theme="light"] #contato,
+html[data-theme="light"] i {
+  color: #980046;
+}
+
+html[data-theme="light"] .card-projeto,
+html[data-theme="light"] .sobre,
+html[data-theme="light"] #contato {
+  background: #f6d4e4;
+  /* background: #ce6a995e; */
+}
+
+/* ce6a99 */
+
+html[data-theme="light"] h2 {
+  color: #980046;
+}
+
+html[data-theme="light"] footer img {
+  background: #009aff;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+html[data-theme="light"] h4,
+html[data-theme="light"] #contato p > a {
+  color: #009aff;
+}
+
+html[data-theme="light"] #btVerTodos,
+html[data-theme="light"] .icons-social-media a {
+  background: #ce6a99;
+}
+
+html[data-theme="light"] .links-projeto a,
+html[data-theme="light"] form input,
+html[data-theme="light"] form textarea {
+  background: #980046;
+  color: #ffffff;
+}
+
+html[data-theme="light"] #navBar {
+  background: #ffebf4;
+}
+
+html[data-theme="light"] #menuDesktop {
+  color: #ce6a99;
+}
+
+html[data-theme="light"] #menu {
+  background: #f6d4e4;
+}
+
+html[data-theme="light"] #menu li:hover,
+html[data-theme="light"] #menuDesktop li:hover {
+  color: #980046;
+}
+
+html.transition,
+html.transition *,
+html.transition *::before,
+html.transition *::after {
+  transition: all 700ms;
+  transition-delay: 0;
 }

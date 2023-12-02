@@ -9,7 +9,10 @@ var maisProjetos = document.getElementById('maisProjetos')
 var textoBtVerTodos = document.getElementById('textoBtVerTodos')
 var projetos = document.getElementById('projetos');
 
-var cardProjeto = document.querySelectorAll('.card-projeto')
+var cardProjeto = document.querySelectorAll('.card-projeto');
+
+const btAlterarTema = document.querySelector('button[name=theme]');
+const iconTheme = document.getElementById('icon-tema');
 
 iconMenu.addEventListener('click', function () {
   if (menuImage.src.includes('list.svg')) {
@@ -44,4 +47,23 @@ btVerTodos.onclick = function () {
     maisProjetos.style.display = 'none';
     textoBtVerTodos.innerText = 'Ver todos'
   }
+}
+
+btAlterarTema.addEventListener('click', () => {
+  if (document.documentElement.getAttribute('data-theme') === 'dark') {
+    transicao();
+    iconTheme.src = './assets/dark-theme-icon.svg';
+    document.documentElement.setAttribute('data-theme', 'light');
+  } else {
+    transicao();
+    iconTheme.src = './assets/light-theme-icon.svg';
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+})
+
+let transicao = () => {
+  document.documentElement.classList.add('transition');
+  window.setTimeout(() => {
+    document.documentElement.classList.remove('transition');
+  }, 1000)
 }

@@ -111,7 +111,8 @@ i {
   );
 }
 
-.icons-social-media a:hover {
+.icons-social-media a:hover,
+#menu button:hover {
   background: var(--color-brand-primary);
 }
 
@@ -147,6 +148,12 @@ form textarea:focus {
 #menuDesktop li:hover {
   color: var(--color-text-primary);
   font-weight: 700;
+}
+
+#menu button {
+  border-radius: 0.5rem;
+  background: var(--color-surface-secondary);
+  padding: 0.75rem;
 }
 
 .card-projeto {
@@ -254,8 +261,18 @@ html[data-theme="light"] h2 {
 
 html[data-theme="light"] footer img {
   background: #009aff;
-  border-radius: 30px;
-  padding: 10px;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+html[data-theme="light"] #iconMenu {
+  background: #ce6a99;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+html[data-theme="light"] hr {
+  border-color: #ce6a99;
 }
 
 html[data-theme="light"] h4,
@@ -268,11 +285,21 @@ html[data-theme="light"] .icons-social-media a {
   background: #ce6a99;
 }
 
-html[data-theme="light"] .links-projeto a,
+html[data-theme="light"] .links-projeto a {
+  background: #980046;
+}
+
 html[data-theme="light"] form input,
 html[data-theme="light"] form textarea {
-  background: #980046;
-  color: #ffffff;
+  background: #ffebf4;
+  color: #980046;
+}
+
+html[data-theme="light"] form input:focus,
+html[data-theme="light"] form textarea:focus {
+  border-color: #ce6a99;
+  box-shadow: 0 0 0 3px #ce6a99;
+  caret-color: #ce6a99;
 }
 
 html[data-theme="light"] #navBar {
@@ -285,11 +312,16 @@ html[data-theme="light"] #menuDesktop {
 
 html[data-theme="light"] #menu {
   background: #f6d4e4;
+  color: #ce6a99;
 }
 
 html[data-theme="light"] #menu li:hover,
 html[data-theme="light"] #menuDesktop li:hover {
   color: #980046;
+}
+
+html[data-theme="light"] #menu button {
+  background: hsla(332, 51%, 61%, 0.2);
 }
 
 html.transition,

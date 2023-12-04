@@ -11,8 +11,8 @@ var projetos = document.getElementById('projetos');
 
 var cardProjeto = document.querySelectorAll('.card-projeto');
 
-const btAlterarTema = document.querySelector('button[name=theme]');
-const iconTheme = document.getElementById('icon-tema');
+const btAlterarTema = document.querySelectorAll('button[name=theme]');
+const iconTema = document.querySelectorAll('.icon-tema');
 
 iconMenu.addEventListener('click', function () {
   if (menuImage.src.includes('list.svg')) {
@@ -22,7 +22,7 @@ iconMenu.addEventListener('click', function () {
     headerConteudo.classList.add('pt-[88px]')
 
     menu.classList.remove('hidden');
-    menu.classList.add('fixed', 'flex', 'flex-row', 'justify-end');
+    menu.classList.add('fixed', 'flex', 'flex-col');
 
   } else {
     menuImage.src = './assets/list.svg';
@@ -49,19 +49,20 @@ btVerTodos.onclick = function () {
   }
 }
 
-btAlterarTema.addEventListener('click', () => {
-  if (document.documentElement.getAttribute('data-theme') === 'dark') {
-    transicao();
-    iconTheme.src = './assets/dark-theme-icon.svg';
-    document.documentElement.setAttribute('data-theme', 'light');
-  } else {
-    transicao();
-    iconTheme.src = './assets/light-theme-icon.svg';
-    document.documentElement.setAttribute('data-theme', 'dark');
-  }
-})
+btAlterarTema.forEach(element => {
+  element.addEventListener('click', trocarTema);
+});
 
-let transicao = () => {
+function trocarTema() {
+  const temaAtual = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  const novoIcone = temaAtual === 'dark' ? './assets/light-theme-icon.svg' : './assets/dark-theme-icon.svg';
+
+  transicao();
+  iconTema.forEach(icon => icon.src = novoIcone);
+  document.documentElement.setAttribute('data-theme', temaAtual);
+}
+
+function transicao() {
   document.documentElement.classList.add('transition');
   window.setTimeout(() => {
     document.documentElement.classList.remove('transition');

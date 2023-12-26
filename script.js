@@ -1,18 +1,22 @@
-var headerConteudo = document.getElementById('headerConteudo');
-var menu = document.getElementById('menu');
-var navBar = document.getElementById('navBar');
-var iconMenu = document.getElementById('iconMenu');
-var menuImage = document.getElementById('menuImage');
+let headerConteudo = document.getElementById('headerConteudo');
+let menu = document.getElementById('menu');
+let navBar = document.getElementById('navBar');
+let iconMenu = document.getElementById('iconMenu');
+let menuImage = document.getElementById('menuImage');
 
-var btVerTodos = document.getElementById('btVerTodos');
-var maisProjetos = document.getElementById('maisProjetos')
-var textoBtVerTodos = document.getElementById('textoBtVerTodos')
-var projetos = document.getElementById('projetos');
+let btVerTodos = document.getElementById('btVerTodos');
+let maisProjetos = document.getElementById('maisProjetos')
+let textoBtVerTodos = document.getElementById('textoBtVerTodos')
+let projetos = document.getElementById('projetos');
 
-var cardProjeto = document.querySelectorAll('.card-projeto');
+let cardProjeto = document.querySelectorAll('.card-projeto');
 
-const btAlterarTema = document.querySelectorAll('button[name=theme]');
-const iconTema = document.querySelectorAll('.icon-tema');
+let btAlterarTema = document.querySelectorAll('button[name=theme]');
+let iconTema = document.querySelectorAll('.icon-tema');
+
+const yearElement = document.getElementById('year');
+const anoAtual = new Date();
+yearElement.innerHTML = anoAtual.getFullYear();
 
 iconMenu.addEventListener('click', function () {
   if (menuImage.src.includes('list.svg')) {

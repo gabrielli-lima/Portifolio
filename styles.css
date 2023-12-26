@@ -76,6 +76,40 @@ button[type="submit"] {
   color: var(--color-text-secondary);
 }
 
+/* .itensSobre button span {
+  color: var(--color-brand-secondary);
+  font-family: "Kalam", cursive;
+}
+
+.itensSobre button span:hover {
+  color: var(--color-text-primary);
+}
+
+.subItems {
+  color: var(--color-text-secondary);
+  font-family: "Heebo", sans-serif;
+}
+
+.decoItems {
+  height: 4px;
+  width: 100%;
+  max-width: 8px 12px 0 0;
+  background: var(--color-brand-secondary);
+
+  animation: decoItemsAnimation 0.7s ease-out;
+}
+
+@keyframes decoItemsAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+} */
+
+/* PROJETOS */
+
 h4 {
   color: var(--color-brand-secondary);
   font-family: "Kalam", cursive;
